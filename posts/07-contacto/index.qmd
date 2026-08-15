@@ -25,6 +25,3 @@ Contacto
 | Instagram | [{{< var redes.instagram_handle >}}]({{< var redes.instagram_url >}}) |
 | Spotify | [Autóctonos de Ninguna Parte]({{< var redes.spotify_url >}}) |
 | YouTube | [Autóctonos de Ninguna Parte]({{< var redes.youtube_url >}}) |
-
-*Los enlaces de Spotify y YouTube son marcadores de posición: reemplázalos
-por la URL real del perfil/canal en `_variables.yml` antes de publicar.*
