@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.9.38">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Introduction – Hydrology Tools</title>
+<title>Autóctonos de Ninguna Parte</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,6 +33,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./images/logo-negro.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -41,7 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9c8f6917bb976eb1370e91c8fae1e261.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-0c3f5b84615c6f784239aa8f8c85ceb4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -56,88 +59,324 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta property="og:title" content="– Autóctonos de Ninguna Parte">
+<meta property="og:description" content="Book de prensa 2026 · Autóctonos de Ninguna Parte, power trío de rock alternativo desde Santiago de Chile.">
+<meta property="og:image" content="https://Alobondo.github.io/ADNP/images/banda-1.jpg">
+<meta property="og:site_name" content="Autóctonos de Ninguna Parte">
+<meta name="twitter:title" content="– Autóctonos de Ninguna Parte">
+<meta name="twitter:description" content="Book de prensa 2026 · Autóctonos de Ninguna Parte, power trío de rock alternativo desde Santiago de Chile.">
+<meta name="twitter:image" content="https://Alobondo.github.io/ADNP/images/banda-1.jpg">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Hydrology Tools</span>
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/logo-negro.jpg" alt="" class="navbar-logo light-content">
+    <img src="./images/logo-negro.jpg" alt="" class="navbar-logo dark-content">
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Intro</span></a>
+<span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
-<span class="menu-text">Apps</span></a>
+    <a class="nav-link" href="./posts/01-biografia/index.html"> 
+<span class="menu-text">Biografía</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./packages.html"> 
-<span class="menu-text">Packages</span></a>
+    <a class="nav-link" href="./posts/02-banda/index.html"> 
+<span class="menu-text">Banda</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About Me</span></a>
+    <a class="nav-link" href="./posts/03-discografia/index.html"> 
+<span class="menu-text">Discografía</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./posts/04-videos/index.html"> 
+<span class="menu-text">Videos</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./posts/05-prensa/index.html"> 
+<span class="menu-text">Prensa</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./posts/06-eventos/index.html"> 
+<span class="menu-text">Eventos</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./posts/07-contacto/index.html"> 
+<span class="menu-text">Contacto</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.instagram.com/autoctonos.musica/"> <i class="bi bi-instagram" role="img" aria-label="Instagram">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://open.spotify.com/intl-es/artist/7pqtHCx8vGUbM5sVb45peN?si=KhruGIxITpeL7kBUFPJqew"> <i class="bi bi-spotify" role="img" aria-label="Spotify">
+</i> 
+<span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-    <a href="https://www.linkedin.com/in/alonso-arriagada" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
-    <a href="https://github.com/Alobondo/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-broadside column-page">
-  <div class="about-main">
-    <div class="about-entity" style="background-image: url('img/Logo_R_Shiny.png')"></div>
-    <div class="about-contents"><header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Introduction</h1>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header><main class="content" id="quarto-document-content">
-<p>This website contains open-access tools for hydrological resource estimations. The applications, packages, and functions developed are intended to quickly and easily apply different statistical analyses and estimations using standard methodologies in water resource analysis. These tools aim to support decision-making related to hydrological risks, advanced statistical analysis of water resources, availability estimations, and more, through platforms and functions that allow for data management, proper visualization, and the download of all results.</p>
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
-</main></div>
-  </div>
+
+
+<section id="autóctonos-de-ninguna-parte" class="level1 adnp-hero">
+<h1>Autóctonos de Ninguna Parte</h1>
+<p><span class="subtitle">Book de Prensa · 2026</span></p>
+<p style="max-width:640px;margin:1.2rem auto 0;">
+Power trío de rock alternativo desde Santiago de Chile. Este sitio reúne, sección por sección, el mismo contenido del <em>book</em> de prensa 2026 del grupo.
+</p>
+</section>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/banda-1.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:45.0%"></p>
+</figure>
 </div>
- <!-- /main -->
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Ym9vayUyMGRlJTIwcHJlbnNh" data-listing-file-modified-sort="1786725348281" data-listing-reading-time-sort="2" data-listing-word-count-sort="353">
+<div class="thumbnail"><a href="./posts/01-biografia/index.html" class="no-external">
+
+<img loading="lazy" src="./images/banda-3.jpg" class="thumbnail-image" style="height: 220px;">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/01-biografia/index.html" class="no-external">Biografía</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/01-biografia/index.html" class="no-external">
+<p>Power trío de rock alternativo formado en Santiago en 2018.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/01-biografia/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="Ym9vayUyMGRlJTIwcHJlbnNh" data-listing-file-modified-sort="1786739865021" data-listing-reading-time-sort="1" data-listing-word-count-sort="155">
+<div class="thumbnail"><a href="./posts/02-banda/index.html" class="no-external">
+
+<img loading="lazy" src="./images/banda-1.jpg" class="thumbnail-image" style="height: 220px;">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/02-banda/index.html" class="no-external">Banda</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/02-banda/index.html" class="no-external">
+<p>Integrantes: Nico (voz y guitarra), Filo (bajo y coros) y Bondo (batería).</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/02-banda/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="Ym9vayUyMGRlJTIwcHJlbnNh" data-listing-file-modified-sort="1786729839658" data-listing-reading-time-sort="1" data-listing-word-count-sort="102">
+<div class="thumbnail"><a href="./posts/03-discografia/index.html" class="no-external">
+
+<img loading="lazy" src="./images/portada-postdigital.jpeg" class="thumbnail-image" style="height: 220px;">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/03-discografia/index.html" class="no-external">Discografía</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/03-discografia/index.html" class="no-external">
+<p>Alza la Voz (2021), sencillos 2024 y el próximo álbum Postdigital (nov. 2026).</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/03-discografia/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="Ym9vayUyMGRlJTIwcHJlbnNh" data-listing-file-modified-sort="1786750168545" data-listing-reading-time-sort="2" data-listing-word-count-sort="292">
+<div class="thumbnail"><a href="./posts/04-videos/index.html" class="no-external">
+
+<img loading="lazy" src="./images/banda-4.jpg" class="thumbnail-image" style="height: 220px;">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/04-videos/index.html" class="no-external">Videos</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/04-videos/index.html" class="no-external">
+<p>El Tren, Sueño Perdido, Autóctono y Ruido.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/04-videos/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="Ym9vayUyMGRlJTIwcHJlbnNh" data-listing-file-modified-sort="1786727114049" data-listing-reading-time-sort="1" data-listing-word-count-sort="178">
+<div class="thumbnail"><a href="./posts/05-prensa/index.html" class="no-external">
+
+<img loading="lazy" src="./images/banda-2.jpg" class="thumbnail-image" style="height: 220px;">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/05-prensa/index.html" class="no-external">Prensa</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/05-prensa/index.html" class="no-external">
+<p>Menciones en iRock, Cool Music, Rockaxis y Trunfo Rock.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/05-prensa/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="Ym9vayUyMGRlJTIwcHJlbnNh" data-listing-file-modified-sort="1786681883143" data-listing-reading-time-sort="2" data-listing-word-count-sort="251">
+<div class="thumbnail"><a href="./posts/06-eventos/index.html" class="no-external">
+
+<img loading="lazy" src="./images/banda-4.jpg" class="thumbnail-image" style="height: 220px;">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/06-eventos/index.html" class="no-external">Eventos</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/06-eventos/index.html" class="no-external">
+<p>Destacados en vivo: Ummo, Bar Óxido, Teatro Mori, Mi Bar y Teatro Lihuén.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/06-eventos/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-categories="Ym9vayUyMGRlJTIwcHJlbnNh" data-listing-file-modified-sort="1786681893316" data-listing-reading-time-sort="1" data-listing-word-count-sort="68">
+<div class="thumbnail"><a href="./posts/07-contacto/index.html" class="no-external">
+
+<img loading="lazy" src="./images/banda-1.jpg" class="thumbnail-image" style="height: 220px;">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/07-contacto/index.html" class="no-external">Contacto</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/07-contacto/index.html" class="no-external">
+<p>Contacto de prensa, redes sociales y plataformas de streaming.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/07-contacto/index.html" class="no-external">
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No hay resultados</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const isCodeAnnotation = (el) => {
@@ -156,12 +395,12 @@ ul.task-list li input[type="checkbox"] {
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Copiado");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Copiado");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -204,7 +443,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/Alobondo\.github\.io\/ADNP");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -535,18 +774,32 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© Copyright 2026, Alonso Arriagada</p>
+<p>© 2026 Autóctonos de Ninguna Parte</p>
 </div>   
     <div class="nav-footer-center">
-      &nbsp;
-    </div>
-    <div class="nav-footer-right">
-<p>Built with <a href="https://quarto.org/">Quarto</a></p>
+<p>Rock alternativo · Santiago, Chile</p>
 </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:autoctonos.musica@gmail.com">
+      <i class="bi bi-envelope" role="img" aria-label="Email">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.instagram.com/autoctonos.musica/">
+      <i class="bi bi-instagram" role="img" aria-label="Instagram">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
   </div>
 </footer>
 
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
