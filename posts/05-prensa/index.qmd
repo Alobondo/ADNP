@@ -1,7 +1,7 @@
 ---
 title: "Prensa"
 description: "Menciones en iRock, Cool Music, Rockaxis y Trunfo Rock."
-image: "../../images/banda-2.jpg"
+image: "../../images/Prensa.png"
 order: 5
 categories: ["book de prensa"]
 ---

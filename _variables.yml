@@ -25,6 +25,6 @@ redes:
 # dQw4w9WgXcQ). posts/04-videos/index.qmd extrae el ID automáticamente.
 videos:
   el_tren_id: "https://www.youtube.com/watch?v=HUXJJvIEPwc&list=RDHUXJJvIEPwc&start_radio=1"
-  sueno_perdido_id: "https://www.youtube.com/watch?v=QDk73WJio2M&list=RDQDk73WJio2M&start_radio=1"
-  autoctono_id: "https://www.youtube.com/watch?v=zbjHOGHSZ58&list=OLAK5uy_m10yaqn8MZluMgKrjL30yCFfq8sMavdq0"
+  sueno_perdido_id: "https://www.youtube.com/watch?v=JfYdGJQ40no"
+  autoctono_id: "https://www.youtube.com/watch?v=aZV1m4spKl4"
   ruido_id: "https://www.youtube.com/watch?v=KY2WRr4vTHE&list=RDKY2WRr4vTHE&start_radio=1"

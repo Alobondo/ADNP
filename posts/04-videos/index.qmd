@@ -1,7 +1,7 @@
 ---
 title: "Videos"
 description: "El Tren, Sueño Perdido, Autóctono y Ruido."
-image: "../../images/banda-4.jpg"
+image: "../../images/Videos.jpg"
 order: 4
 categories: ["book de prensa"]
 ---
