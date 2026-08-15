@@ -66,7 +66,7 @@ format:
     anchor-sections: false
     smooth-scroll: true
     grid:
-      body-width: 1000px
+      body-width: 950px
 
 execute:
   freeze: auto
