@@ -1,0 +1,30 @@
+# Variables reutilizables en los .qmd mediante shortcodes {{< var nombre.campo >}}
+# Edita este archivo antes de publicar: aquí se centralizan datos de contacto y
+# enlaces externos (redes, streaming, videos) para no tener que buscarlos
+# dentro de cada sección.
+
+banda:
+  nombre: "Autóctonos de Ninguna Parte"
+  ciudad: "Santiago, Chile"
+  genero: "Rock alternativo"
+
+contacto:
+  nombre: "Francisco Muhlhausen"
+  telefono: "+56 9 8199 2429"
+  email: "autoctonos.musica@gmail.com"
+
+redes:
+  instagram_handle: "@autoctonos.musica"
+  instagram_url: "https://www.instagram.com/autoctonos.musica/"
+  # TODO: reemplazar por la URL real del perfil/artista
+  spotify_url: "https://open.spotify.com/search/Autoctonos%20de%20Ninguna%20Parte"
+  # TODO: reemplazar por la URL real del canal
+  youtube_url: "https://www.youtube.com/results?search_query=Autoctonos+de+Ninguna+Parte"
+
+# Pega aquí la URL completa de YouTube de cada video (o solo el ID, ej:
+# dQw4w9WgXcQ). posts/04-videos/index.qmd extrae el ID automáticamente.
+videos:
+  el_tren_id: "https://www.youtube.com/watch?v=HUXJJvIEPwc&list=RDHUXJJvIEPwc&start_radio=1"
+  sueno_perdido_id: "https://www.youtube.com/watch?v=QDk73WJio2M&list=RDQDk73WJio2M&start_radio=1"
+  autoctono_id: "https://www.youtube.com/watch?v=zbjHOGHSZ58&list=OLAK5uy_m10yaqn8MZluMgKrjL30yCFfq8sMavdq0"
+  ruido_id: "https://www.youtube.com/watch?v=KY2WRr4vTHE&list=RDKY2WRr4vTHE&start_radio=1"

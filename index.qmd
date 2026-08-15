@@ -1,19 +1,29 @@
 ---
-title: "About Me"
-about:
-  id: me
-  template: broadside
-  image: img/profile.png
+title: ""
+page-layout: full
+title-block-banner: false
+title-block-style: none
+listing:
+  contents: posts
+  type: default
+  sort: "order"
+  fields: [image, title, description]
+  image-height: 220px
+  categories: false
+  feed: false
 ---
 
-:::{#me}
+::: {.adnp-hero}
+# Autóctonos de Ninguna Parte
 
-## Goals
+<span class="subtitle">Book de Prensa · 2026</span>
 
-## Education
-
-## Experience
-
+<p style="max-width:640px;margin:1.2rem auto 0;">
+Power trío de rock alternativo desde Santiago de Chile. Este sitio reúne,
+sección por sección, el mismo contenido del *book* de prensa 2026 del grupo.
+</p>
 :::
 
-Thanks for checking out my web site!
+
+![](images/banda-1.jpg){fig-align="center" width=45%}
+

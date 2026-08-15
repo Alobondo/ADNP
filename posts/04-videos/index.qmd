@@ -1,0 +1,82 @@
+---
+title: "Videos"
+description: "El Tren, Sueño Perdido, Autóctono y Ruido."
+image: "../../images/banda-4.jpg"
+order: 4
+categories: ["book de prensa"]
+---
+
+```{r}
+#| label: setup
+library(yaml)
+library(glue)
+```
+
+::: {.tag-lime}
+Videos
+:::
+
+```{r}
+#| label: videos-data
+vars <- read_yaml("../../_variables.yml")
+v <- vars$videos
+
+# Extrae el ID de video (11 caracteres) desde una URL completa de YouTube
+# ("watch?v=", "youtu.be/", listas de reproducción, etc.) o lo deja pasar
+# tal cual si ya es un ID / no hay valor cargado.
+youtube_id <- function(x) {
+  if (is.null(x) || !nzchar(x) || x == "TODO") return(NA_character_)
+  m <- regmatches(x, regexpr("(?:v=|youtu\\.be/|embed/)([A-Za-z0-9_-]{11})", x, perl = TRUE))
+  if (length(m) == 0) return(x)
+  sub("^(?:v=|youtu\\.be/|embed/)", "", m, perl = TRUE)
+}
+
+videos <- tibble::tribble(
+  ~titulo,          ~url,
+  "El Tren",        v$el_tren_id,
+  "Sueño Perdido",  v$sueno_perdido_id,
+  "Autóctono",      v$autoctono_id,
+  "Ruido",          v$ruido_id
+)
+videos$id <- vapply(videos$url, youtube_id, character(1))
+```
+
+```{r}
+#| label: videos-render
+#| output: asis
+cat('<div class="video-grid">\n\n')
+for (i in seq_len(nrow(videos))) {
+  vid <- videos[i, ]
+  if (is.na(vid$id)) {
+    cat(glue(
+      '<div class="adnp-card" style="text-align:center;">\n',
+      '<h3>{vid$titulo}</h3>\n',
+      '<p>Video próximamente. Agrega el ID de YouTube en <code>_variables.yml</code>.</p>\n',
+      '</div>\n\n'
+    ))
+  } else {
+    iframe <- glue(
+      '<iframe src="https://www.youtube.com/embed/{vid$id}" ',
+      'title="{vid$titulo}" frameborder="0" allowfullscreen ',
+      'referrerpolicy="strict-origin-when-cross-origin"></iframe>'
+    )
+    cat(glue(
+      '<div class="adnp-card">\n',
+      '<h3>{vid$titulo}</h3>\n',
+      '<div class="video-embed">\n',
+      '{iframe}\n',
+      '</div>\n',
+      '</div>\n\n'
+    ))
+  }
+}
+cat('</div>\n')
+```
+
+## Redes
+
+Sigue el canal de YouTube y el perfil de Instagram para más contenido
+audiovisual:
+
+- YouTube: {{< var redes.youtube_url >}}
+- Instagram: [{{< var redes.instagram_handle >}}]({{< var redes.instagram_url >}})

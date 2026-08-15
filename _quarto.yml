@@ -1,27 +1,75 @@
 project:
   type: website
-  output-dir: docs
-  
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "posts/**"
+    - "!ADNP/"
+
+lang: es
+
 website:
-  title: "MY WEB SITE"
+  title: "Autóctonos de Ninguna Parte"
+  description: "Book de prensa 2026 · Autóctonos de Ninguna Parte, power trío de rock alternativo desde Santiago de Chile."
+  # TODO: reemplazar por la URL real una vez creado el repositorio/publicado el sitio
+  site-url: "https://Alobondo.github.io/ADNP"
+  repo-url: "https://github.com/Alobondo/ADNP"
+  favicon: images/logo-negro.png
+  open-graph: true
+  twitter-card: true
+
   navbar:
+    background: dark
+    logo: images/logo-negro.jpg
+    title: false
     left:
       - href: index.qmd
-        text: Home
-      - projects.qmd
-    tools:
-      - icon: twitter
-        href: https://twitter.com/
-      - icon: github
-        href: https://github.com/YOURUSERNAME/YOURREPO
+        text: "Inicio"
+      - href: posts/01-biografia/index.qmd
+        text: "Biografía"
+      - href: posts/02-banda/index.qmd
+        text: "Banda"
+      - href: posts/03-discografia/index.qmd
+        text: "Discografía"
+      - href: posts/04-videos/index.qmd
+        text: "Videos"
+      - href: posts/05-prensa/index.qmd
+        text: "Prensa"
+      - href: posts/06-eventos/index.qmd
+        text: "Eventos"
+    right:
+      - href: posts/07-contacto/index.qmd
+        text: "Contacto"
+      - icon: instagram
+        href: "https://www.instagram.com/autoctonos.musica/"
+        aria-label: Instagram
+      - icon: spotify
+        href: "https://open.spotify.com/intl-es/artist/7pqtHCx8vGUbM5sVb45peN?si=KhruGIxITpeL7kBUFPJqew"
+        aria-label: Spotify
+
   page-footer:
-    right: "Built with [Quarto](https://quarto.org/)"
-    left: "&copy; Copyright 2023, YOUR NAME"
+    background: dark
+    left: "© 2026 Autóctonos de Ninguna Parte"
+    center: "Rock alternativo · Santiago, Chile"
+    right:
+      - icon: envelope
+        href: "mailto:autoctonos.musica@gmail.com"
+        aria-label: Email
+      - icon: instagram
+        href: "https://www.instagram.com/autoctonos.musica/"
+        aria-label: Instagram
 
 format:
   html:
-    theme: cerulean
-    toc: true
+    theme: styles.scss
+    toc: false
+    anchor-sections: false
+    smooth-scroll: true
+    grid:
+      body-width: 1000px
 
-editor: source
-
+execute:
+  freeze: auto
+  echo: false
+  warning: false
+  message: false

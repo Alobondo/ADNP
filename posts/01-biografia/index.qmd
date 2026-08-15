@@ -1,0 +1,77 @@
+---
+title: "Biografía"
+description: "Power trío de rock alternativo formado en Santiago en 2018."
+image: "../../images/banda-3.jpg"
+order: 1
+categories: ["book de prensa"]
+---
+
+```{r}
+#| label: setup
+library(dplyr)
+library(knitr)
+library(ggplot2)
+```
+
+::: {.tag-lime}
+Biografía
+:::
+
+**Autóctonos de Ninguna Parte** es un proyecto musical independiente y power
+trío chileno. Formado en Santiago de Chile a principios del 2018, está
+inspirado en el **rock alternativo de los 90's**, en una búsqueda por volver
+a la música de guitarra, de instrumentos análogos y de transmitir letras con
+sentido.
+
+En 2021, la agrupación lanzó su primer álbum **"Alza la Voz"**, grabado y
+masterizado junto al músico y productor chileno Pablo Giadach en Estudio
+Lautaro. En ese año, liberaron los sencillos **"El Tren"**, **"Destino
+Final"** y **"Eclipse"**, todos con muy buen recibimiento en medios y siendo
+seleccionados en las playlists *"Rock Chileno"* y *"Novedades Rock"* de
+Spotify.
+
+En 2024 regresaron con nuevas composiciones, registrando tres canciones en
+Estudio LEROCK junto al productor José Tomás Molina: **"Sueño Perdido"**,
+**"Ruido"** y **"Sin Respiración"**.
+
+Para el 2026, Autóctonos de Ninguna Parte inicia una nueva etapa creativa,
+con la producción de Claudio Manríquez (Jurel Sónico) y la masterización de
+Jack Endino, para lanzar una serie de nuevos singles que abrirán el camino
+hacia el próximo álbum **"Postdigital"**, reflejando el crecimiento del
+proyecto y la evolución natural de su sonido.
+
+## Línea de tiempo
+
+```{r}
+#| label: hitos
+hitos <- tibble::tribble(
+  ~anio, ~hito,
+  2018,  "Formación de la banda en Santiago de Chile",
+  2021,  'Álbum debut "Alza la Voz" (Estudio Lautaro, prod. Pablo Giadach)',
+  2021,  'Sencillos "El Tren", "Destino Final" y "Eclipse"',
+  2024,  'Sesiones en Estudio LEROCK (prod. José Tomás Molina)',
+  2024,  '"Sueño Perdido", "Ruido" y "Sin Respiración"',
+  2026,  'Nueva etapa: prod. Claudio Manríquez, masterización Jack Endino',
+  2026,  'Camino al álbum "Postdigital"'
+)
+
+kable(hitos, col.names = c("Año", "Hito"))
+```
+
+```{r}
+#| label: fig-timeline
+#| fig-cap: "Hitos de Autóctonos de Ninguna Parte (2018-2026)"
+#| fig-width: 8
+#| fig-height: 3.2
+ggplot(hitos, aes(x = anio, y = 1)) +
+  geom_hline(yintercept = 1, color = "#21272A", linewidth = 0.6) +
+  geom_point(size = 5, color = "#726EFF") +
+  geom_text(aes(label = anio), vjust = -1.4, family = "sans",
+            fontface = "bold", color = "#21272A", size = 4) +
+  scale_x_continuous(breaks = sort(unique(hitos$anio))) +
+  theme_void() +
+  theme(
+    plot.background = element_rect(fill = "#FFFFFF", color = NA),
+    axis.text.x = element_blank()
+  )
+```

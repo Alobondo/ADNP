@@ -1,0 +1,221 @@
+/*-- scss:defaults --*/
+
+// ---- Paleta ADNP -----------------------------------------------------
+$adnp-purple: #726EFF;
+$adnp-dark:   #21272A;
+$adnp-lime:   #CDFE03;
+$adnp-white:  #FFFFFF;
+
+// Tipografías (Google Fonts): titulares "marcador" + cuerpo geométrico
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+$font-family-headings: 'Permanent Marker', cursive;
+$font-family-body: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+
+// ---- Variables Bootstrap / Quarto ------------------------------------
+$primary:    $adnp-purple;
+$secondary:  $adnp-dark;
+$body-bg:    $adnp-white;
+$body-color: $adnp-dark;
+$link-color: $adnp-purple;
+
+$font-family-sans-serif: $font-family-body;
+$headings-font-family: $font-family-headings;
+$headings-color: $adnp-dark;
+$font-size-base: 1.05rem;
+$h1-font-size: 3rem;
+$h2-font-size: 2.2rem;
+$h3-font-size: 1.6rem;
+$headings-line-height: 1.15;
+
+$navbar-bg: $adnp-dark;
+$navbar-fg: $adnp-white;
+$navbar-hl: $adnp-lime;
+
+$footer-bg: $adnp-dark;
+$footer-fg: $adnp-white;
+
+$btn-border-radius: 0;
+$border-radius: 4px;
+
+/*-- scss:rules --*/
+
+body {
+  letter-spacing: 0.01em;
+}
+
+h1, h2, h3, .navbar-title, .display-1, .display-2 {
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+h2 {
+  display: inline-block;
+  background: $adnp-purple;
+  color: $adnp-white;
+  padding: 0.15em 0.45em;
+  margin-bottom: 0.9em;
+}
+
+// Franja destacada al estilo de las etiquetas lima del book de prensa
+.tag-lime {
+  display: inline-block;
+  background: $adnp-lime;
+  color: $adnp-dark;
+  font-family: $font-family-headings;
+  text-transform: uppercase;
+  padding: 0.35em 0.9em;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+}
+
+.tag-dark {
+  display: inline-block;
+  background: $adnp-dark;
+  color: $adnp-white;
+  font-family: $font-family-headings;
+  text-transform: uppercase;
+  padding: 0.35em 0.9em;
+  font-size: 0.95rem;
+}
+
+// ---- Hero (portada) ---------------------------------------------------
+.adnp-hero {
+  background: $adnp-purple;
+  color: $adnp-white;
+  padding: 3.5rem 2rem;
+  margin: -1rem -1rem 2.5rem -1rem;
+  text-align: center;
+}
+
+.adnp-hero h1 {
+  font-family: $font-family-headings;
+  color: $adnp-white;
+  background: none;
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  margin-bottom: 0.3em;
+}
+
+.adnp-hero .subtitle {
+  font-family: $font-family-headings;
+  color: $adnp-dark;
+  background: $adnp-lime;
+  display: inline-block;
+  padding: 0.3em 0.9em;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+// ---- Tarjetas genéricas (banda, discografía, eventos) -----------------
+.adnp-card {
+  background: $adnp-dark;
+  color: $adnp-white;
+  border-radius: $border-radius;
+  padding: 1.25rem;
+  height: 100%;
+}
+
+.adnp-card img {
+  display: block;
+  width: 100%;
+  border-radius: $border-radius;
+  margin-bottom: 0.75rem;
+}
+
+// Fotos cuadradas y acotadas en altura para que los 3 integrantes se vean
+// completos (foto + nombre) sin hacer scroll en una pantalla de ordenador.
+.integrantes-grid .adnp-card img {
+  aspect-ratio: 1 / 1;
+  max-height: 34vh;
+  object-fit: cover;
+}
+
+.adnp-card h3 {
+  color: $adnp-lime;
+  font-family: $font-family-headings;
+  font-size: 1.2rem;
+}
+
+// ---- Grilla de integrantes (sección Banda) --------------------------------
+.integrantes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .integrantes-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+// ---- Grilla de videos (sección Videos) -----------------------------------
+// Grilla propia en CSS: el HTML de cada tarjeta se genera vía R (results
+// asis) y NO se envuelve en un div ::: {layout-ncol} de Quarto, porque su
+// filtro de paneles serializa el HTML crudo como bloque de código en vez
+// de dejarlo pasar (los iframes aparecían como texto plano).
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.video-embed {
+  position: relative;
+  padding-bottom: 56.25%; // relación 16:9
+  height: 0;
+}
+
+.video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: $border-radius;
+}
+
+// ---- Navbar -------------------------------------------------------------
+.navbar {
+  border-bottom: 4px solid $adnp-lime;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: $adnp-lime !important;
+}
+
+// ---- Tablas (kable) -----------------------------------------------------
+table.table {
+  background: $adnp-white;
+}
+
+table.table thead {
+  background: $adnp-dark;
+  color: $adnp-white;
+  font-family: $font-family-headings;
+  text-transform: uppercase;
+}
+
+table.table tbody tr:nth-child(even) {
+  background: rgba($adnp-purple, 0.08);
+}
+
+// ---- Listing (index del blog) -------------------------------------------
+.quarto-listing .listing-item {
+  border-left: 6px solid $adnp-lime;
+}
+
+// ---- Footer ---------------------------------------------------------------
+.page-footer {
+  border-top: 4px solid $adnp-lime;
+}

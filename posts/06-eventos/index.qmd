@@ -1,0 +1,55 @@
+---
+title: "Eventos"
+description: "Destacados en vivo: Ummo, Bar Óxido, Teatro Mori, Mi Bar y Teatro Lihuén."
+image: "../../images/banda-4.jpg"
+order: 6
+categories: ["book de prensa"]
+---
+
+```{r}
+#| label: setup
+library(ggplot2)
+library(dplyr)
+library(knitr)
+```
+
+::: {.tag-lime}
+Eventos destacados
+:::
+
+```{r}
+#| label: eventos-data
+eventos <- tibble::tribble(
+  ~lugar,             ~anio,
+  "Ummo",             2023,
+  "Bar Óxido",        2024,
+  "Teatro Mori",      2024,
+  "Mi Bar",           2025,
+  "Teatro Lihuén",    2025
+) |>
+  arrange(anio) |>
+  mutate(
+    orden = row_number(),
+    lado  = if_else(orden %% 2 == 0, 1, -1)
+  )
+
+kable(eventos |> select(lugar, anio), col.names = c("Lugar", "Año"))
+```
+
+```{r}
+#| label: fig-eventos
+#| fig-cap: "Presentaciones destacadas en vivo (2023-2025)"
+#| fig-width: 9
+#| fig-height: 4
+ggplot(eventos, aes(x = orden, y = 0)) +
+  geom_hline(yintercept = 0, color = "#21272A", linewidth = 0.6) +
+  geom_segment(aes(xend = orden, y = 0, yend = lado * 0.6), color = "#726EFF") +
+  geom_point(size = 5, color = "#CDFE03") +
+  geom_point(size = 5, shape = 1, color = "#21272A", stroke = 1) +
+  geom_text(aes(y = lado * 0.6, label = paste0(lugar, "\n", anio)),
+            vjust = if_else(eventos$lado > 0, -0.4, 1.3),
+            family = "sans", fontface = "bold", color = "#21272A", size = 3.6) +
+  ylim(-1, 1) +
+  theme_void() +
+  theme(plot.background = element_rect(fill = "#FFFFFF", color = NA))
+```

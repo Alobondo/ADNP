@@ -1,0 +1,43 @@
+---
+title: "Banda"
+description: "Integrantes: Nico (voz y guitarra), Filo (bajo y coros) y Bondo (batería)."
+image: "../../images/banda-1.jpg"
+order: 2
+categories: ["book de prensa"]
+---
+
+```{r}
+#| label: setup
+library(glue)
+```
+
+::: {.tag-lime}
+Integrantes
+:::
+
+```{r}
+#| label: integrantes-data
+integrantes <- tibble::tribble(
+  ~rol,             ~nombre,                    ~apodo,   ~foto,
+  "Voz y guitarra",  "Nicolas Geister",          "Nico",   "../../images/Nico_ADN.jpeg",
+  "Bajo y coros",    "Francisco Muhlhausen",     "Filo",   "../../images/Filo_ADN.jpeg",
+  "Batería",         "Alonso Arriagada",         "Bondo",  "../../images/Bondo_ADNP.png"
+)
+```
+
+```{r}
+#| label: integrantes-cards
+#| output: asis
+cat('<div class="integrantes-grid">\n\n')
+for (i in seq_len(nrow(integrantes))) {
+  p <- integrantes[i, ]
+  cat(glue(
+    '<div class="adnp-card">\n',
+    '  <img src="{p$foto}" alt="{p$nombre}">\n',
+    '  <h3>{p$rol}</h3>\n',
+    '  <p style="margin-bottom:0;">{p$nombre} <br><em>("{p$apodo}")</em></p>\n',
+    '</div>\n\n'
+  ))
+}
+cat('</div>\n')
+```

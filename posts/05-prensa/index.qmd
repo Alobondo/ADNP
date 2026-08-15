@@ -1,0 +1,30 @@
+---
+title: "Prensa"
+description: "Menciones en iRock, Cool Music, Rockaxis y Trunfo Rock."
+image: "../../images/banda-2.jpg"
+order: 5
+categories: ["book de prensa"]
+---
+
+```{r}
+#| label: setup
+library(knitr)
+```
+
+::: {.tag-lime}
+Prensa
+:::
+
+```{r}
+#| label: prensa-data
+prensa <- tibble::tribble(
+  ~medio,         ~anio,  ~titular,                                                           ~url,
+  "iRock",        "2021", 'Autóctonos De Ninguna Parte nos presenta "Alza la Voz"', "https://www.irock.cl/autoctonos-de-ninguna-parte-nos-presenta-alza-la-voz/",
+  "Cool Music",   "2021", "Autóctonos De Ninguna Parte Lanza Su Tercer Sencillo Del Año Titulado 'El Tren'", "https://coolmusicchile.cl/2021/04/autoctonos-de-ninguna-parte-lanza-su-tercer-sencillo-del-ano-titulado-el-tren/",
+  "Rockaxis",     "2021", '"Alza la voz": Autóctonos de Ninguna Parte estrenan su disco debut', "https://www.rockaxis.com/chile/noticia/32333/-alza-la-voz-autoctonos-de-ninguna-parte-estrenan-su-disco-debut/",
+  "Rockaxis",     "2024", "'Sueño Perdido' es el nuevo single de Autóctonos de Ninguna Parte", "https://www.rockaxis.com/chile/noticia/43948/-sueno-perdido-es-el-nuevo-single-de-autoctonos-de-ninguna-parte/",
+  "Trunfo Rock",  "2025", 'Autóctonos De Ninguna Parte estrena nuevo single, "Ruido"', "https://triunforock.com.ar/autoctonos-de-ninguna-parte-estrena-nuevo-single-%c2%a8ruido%c2%a8/",
+)
+
+kable(prensa, col.names = c("Medio", "Año", "Titular", "URL"))
+```

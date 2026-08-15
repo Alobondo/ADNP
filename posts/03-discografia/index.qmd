@@ -1,0 +1,38 @@
+---
+title: "Discografía"
+description: "Alza la Voz (2021), sencillos 2024 y el próximo álbum Postdigital (nov. 2026)."
+image: "../../images/portada-postdigital.jpeg"
+order: 3
+categories: ["book de prensa"]
+---
+
+```{r}
+#| label: setup
+library(knitr)
+```
+
+::: {.tag-lime}
+Discografía
+:::
+
+```{r}
+#| label: discografia-data
+discografia <- tibble::tribble(
+  ~lanzamiento,           ~anio,   ~detalle,
+  "Alza la Voz",          "2021",  "Álbum debut. Sencillos: El Tren, Eclipse, Destino Final",
+  "Sencillos",             "2024", "Sueño Perdido, Ruido, Sin Respiración",
+  "Postdigital",          "nov. 2026", "Próximo álbum. Sencillo: Mi Última Reencarnación"
+)
+
+kable(discografia, col.names = c("Lanzamiento", "Año", "Detalle"))
+```
+
+::: {.grid}
+::: {.g-col-12 .g-col-md-6}
+### Postdigital *(nov. 2026)*
+
+![](../../images/portada-postdigital.jpeg){fig-alt="Portada del sencillo Mi Última Reencarnación"}
+
+Sencillo: [**"Mi Última Reencarnación"**](https://www.youtube.com/watch?v=lTOsLTuZwbw&list=RDlTOsLTuZwbw&start_radio=1)
+:::
+:::

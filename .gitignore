@@ -1,4 +1,16 @@
-.Rproj.user
+# Quarto
+/.quarto/
+/_site/
+_freeze/
+
+# R
+.Rproj.user/
 .Rhistory
 .RData
 .Ruserdata
+
+# OS
+.DS_Store
+Thumbs.db
+
+**/*.quarto_ipynb
