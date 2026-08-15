@@ -1,0 +1,149 @@
+[
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Apps",
+    "section": "",
+    "text": "Hydrological frequency analysis\nhttps://aam1203.shinyapps.io/Hydro_FA_App_V1_7/"
+  },
+  {
+    "objectID": "projects.html#frequency-analysis-app",
+    "href": "projects.html#frequency-analysis-app",
+    "title": "Apps",
+    "section": "",
+    "text": "Hydrological frequency analysis\nhttps://aam1203.shinyapps.io/Hydro_FA_App_V1_7/"
+  },
+  {
+    "objectID": "projects.html#time-of-concentration-app",
+    "href": "projects.html#time-of-concentration-app",
+    "title": "Apps",
+    "section": "Time of Concentration App",
+    "text": "Time of Concentration App\nTime of concentration and lag time\nhttps://aam1203.shinyapps.io/time_of_concentration_app/"
+  },
+  {
+    "objectID": "projects.html#scs-curve-number-app",
+    "href": "projects.html#scs-curve-number-app",
+    "title": "Apps",
+    "section": "SCS Curve Number App",
+    "text": "SCS Curve Number App\nSCS Curve Number calculator\nhttps://aam1203.shinyapps.io/CN_calculator_V1_1/"
+  },
+  {
+    "objectID": "projects.html#monthly-time-series-infill-app",
+    "href": "projects.html#monthly-time-series-infill-app",
+    "title": "Apps",
+    "section": "Monthly Time Series Infill App",
+    "text": "Monthly Time Series Infill App\nRational Deductive method monthly time series infill\nhttps://aam1203.shinyapps.io/DeductiveR_App_V3_1/"
+  },
+  {
+    "objectID": "projects.html#duration-cuvre-app",
+    "href": "projects.html#duration-cuvre-app",
+    "title": "Apps",
+    "section": "Duration Cuvre App",
+    "text": "Duration Cuvre App\nDuration Curves for hydrological data\nhttps://aam1203.shinyapps.io/CD_APP_V1/"
+  },
+  {
+    "objectID": "projects.html#seasonal-variation-curve-app",
+    "href": "projects.html#seasonal-variation-curve-app",
+    "title": "Apps",
+    "section": "Seasonal Variation Curve App",
+    "text": "Seasonal Variation Curve App\nSeasonal Variation Curves for hydrological data\nhttps://aam1203.shinyapps.io/CVE_APP_V1/"
+  },
+  {
+    "objectID": "projects.html#cr2met-netcdf-extract-app",
+    "href": "projects.html#cr2met-netcdf-extract-app",
+    "title": "Apps",
+    "section": "CR2MET Netcdf Extract App",
+    "text": "CR2MET Netcdf Extract App\nCR2MET netcdf extraction\nhttps://aam1203.shinyapps.io/CR2MET_extract/"
+  },
+  {
+    "objectID": "projects.html#nasapower-retrieve-app",
+    "href": "projects.html#nasapower-retrieve-app",
+    "title": "Apps",
+    "section": "NASAPOWER Retrieve App",
+    "text": "NASAPOWER Retrieve App\nNASAPOWER data retrieve\nhttps://aam1203.shinyapps.io/NASAPOWER_Extractor/"
+  },
+  {
+    "objectID": "projects.html#spi-and-spei-app",
+    "href": "projects.html#spi-and-spei-app",
+    "title": "Apps",
+    "section": "SPI and SPEI App",
+    "text": "SPI and SPEI App\nSPI, SPEI and AI analysis\nhttps://aam1203.shinyapps.io/SPEI_SPI_App_V4/"
+  },
+  {
+    "objectID": "projects.html#trend-and-stationarity-tests-app",
+    "href": "projects.html#trend-and-stationarity-tests-app",
+    "title": "Apps",
+    "section": "Trend and Stationarity Tests App",
+    "text": "Trend and Stationarity Tests App\nTrend and stationarity tests for hydrological time series\nhttps://aam1203.shinyapps.io/Trend_Tests_App_V5_1/"
+  },
+  {
+    "objectID": "projects.html#dmc-dashboard",
+    "href": "projects.html#dmc-dashboard",
+    "title": "Apps",
+    "section": "DMC Dashboard",
+    "text": "DMC Dashboard\nDownload and visualize DMC (Dirección Meteorológica de Chile) rainfall data\nhttps://aam1203.shinyapps.io/DMC_Dashboard/"
+  },
+  {
+    "objectID": "projects.html#mawün-verification",
+    "href": "projects.html#mawün-verification",
+    "title": "Apps",
+    "section": "Mawün Verification",
+    "text": "Mawün Verification\nCompare and visualize CR2 Mawün rainfall models data with chilean public rainfall data\nhttps://aam1203.shinyapps.io/Verificacion_MAWUN_App_V0_3/"
+  },
+  {
+    "objectID": "projects.html#rainfall-altitudinal-gradient",
+    "href": "projects.html#rainfall-altitudinal-gradient",
+    "title": "Apps",
+    "section": "Rainfall Altitudinal Gradient",
+    "text": "Rainfall Altitudinal Gradient\nAnalyze rainfall altitudinal gradients considering data from chilean public rainfall stations\nhttps://aam1203.shinyapps.io/R_grad_orografico_V7/"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "This website contains open-access tools for hydrological resource estimations. The applications, packages, and functions developed are intended to quickly and easily apply different statistical analyses and estimations using standard methodologies in water resource analysis. These tools aim to support decision-making related to hydrological risks, advanced statistical analysis of water resources, availability estimations, and more, through platforms and functions that allow for data management, proper visualization, and the download of all results."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "This website was designed by Alonso Arriagada to support hydrological estimations and education.\nAny suggestion or question is welcome, please contact me by email: alonso.arriagada@usach.cl"
+  },
+  {
+    "objectID": "packages.html",
+    "href": "packages.html",
+    "title": "Packages",
+    "section": "",
+    "text": "Estimation of time of concentration and lag times for watersheds based on their morphometric characteristics. It includes various methods for calculation and offers plotting functionalities for comparative analysis.\nhttps://cran.r-project.org/web/packages/Time.R/index.html"
+  },
+  {
+    "objectID": "packages.html#time.r",
+    "href": "packages.html#time.r",
+    "title": "Packages",
+    "section": "",
+    "text": "Estimation of time of concentration and lag times for watersheds based on their morphometric characteristics. It includes various methods for calculation and offers plotting functionalities for comparative analysis.\nhttps://cran.r-project.org/web/packages/Time.R/index.html"
+  },
+  {
+    "objectID": "packages.html#deductiver",
+    "href": "packages.html#deductiver",
+    "title": "Packages",
+    "section": "DeductiveR",
+    "text": "DeductiveR\nApply the Deductive Rational Method to a monthly series of hydrological data to fill in missing data.\nhttps://cran.r-project.org/web/packages/DeductiveR/index.html"
+  },
+  {
+    "objectID": "packages.html#hydrodcindex",
+    "href": "packages.html#hydrodcindex",
+    "title": "Packages",
+    "section": "hydroDCindex",
+    "text": "hydroDCindex\nCompute duration curves of daily flow series, both real and modeled, to be compared through indexes of flow duration curves. The package functions include comparative plots and goodness of fit tests.\nhttps://cran.r-project.org/web/packages/hydroDCindex/index.html"
+  },
+  {
+    "objectID": "packages.html#mctrend",
+    "href": "packages.html#mctrend",
+    "title": "Packages",
+    "section": "MCTrend",
+    "text": "MCTrend\nApplication of a test to rule out that trends detected in hydrological time series are explained exclusively by the randomness of the climate.\nhttps://cran.r-project.org/web/packages/MCTrend/index.html"
+  }
+]
