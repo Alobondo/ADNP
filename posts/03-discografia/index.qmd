@@ -29,7 +29,7 @@ kable(discografia, col.names = c("Lanzamiento", "Año", "Detalle"))
 
 ::: {.grid}
 ::: {.g-col-12 .g-col-md-6}
-### Postdigital *(nov. 2026)*
+### PostDigital *(nov. 2026)*
 
 ![](../../images/portada-postdigital.jpeg){fig-alt="Portada del sencillo Mi Última Reencarnación"}
 
