@@ -19,11 +19,12 @@ redes:
   # TODO: reemplazar por la URL real del perfil/artista
   spotify_url: "https://open.spotify.com/search/Autoctonos%20de%20Ninguna%20Parte"
   # TODO: reemplazar por la URL real del canal
-  youtube_url: "https://www.youtube.com/results?search_query=Autoctonos+de+Ninguna+Parte"
+  youtube_url: "https://www.youtube.com/@Aut%C3%B3ctonosDeNingunaParte"
 
 # Pega aquí la URL completa de YouTube de cada video (o solo el ID, ej:
 # dQw4w9WgXcQ). posts/04-videos/index.qmd extrae el ID automáticamente.
 videos:
+  mi_ultima_reencarnacion_id: "https://www.youtube.com/watch?v=x-AghxZg5Qs&list=RDx-AghxZg5Qs&start_radio=1"
   el_tren_id: "https://www.youtube.com/watch?v=HUXJJvIEPwc&list=RDHUXJJvIEPwc&start_radio=1"
   sueno_perdido_id: "https://www.youtube.com/watch?v=JfYdGJQ40no"
   autoctono_id: "https://www.youtube.com/watch?v=aZV1m4spKl4"

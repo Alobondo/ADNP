@@ -37,7 +37,7 @@ Estudio LEROCK junto al productor José Tomás Molina: **"Sueño Perdido"**,
 Para el 2026, Autóctonos de Ninguna Parte inicia una nueva etapa creativa,
 con la producción de Claudio Manríquez (Jurel Sónico) y la masterización de
 Jack Endino, para lanzar una serie de nuevos singles que abrirán el camino
-hacia el próximo álbum **"Postdigital"**, reflejando el crecimiento del
+hacia el próximo álbum **"PostDigital"**, reflejando el crecimiento del
 proyecto y la evolución natural de su sonido.
 
 ## Línea de tiempo
@@ -52,7 +52,7 @@ hitos <- tibble::tribble(
   2024,  'Sesiones en Estudio LEROCK (prod. José Tomás Molina)',
   2024,  '"Sueño Perdido", "Ruido" y "Sin Respiración"',
   2026,  'Nueva etapa: prod. Claudio Manríquez, masterización Jack Endino',
-  2026,  'Camino al álbum "Postdigital"'
+  2026,  'Camino al álbum "PostDigital"'
 )
 
 kable(hitos, col.names = c("Año", "Hito"))

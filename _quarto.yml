@@ -46,6 +46,9 @@ website:
       - icon: spotify
         href: "https://open.spotify.com/intl-es/artist/7pqtHCx8vGUbM5sVb45peN?si=KhruGIxITpeL7kBUFPJqew"
         aria-label: Spotify
+      - icon: youtube
+        href: "https://www.youtube.com/channel/UCtvWjxr7FvI7hDKihVuDpnA"
+        aria-label: Youtube
 
   page-footer:
     background: dark

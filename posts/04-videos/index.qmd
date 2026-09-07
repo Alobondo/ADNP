@@ -1,6 +1,6 @@
 ---
 title: "Videos"
-description: "El Tren, Sueño Perdido, Autóctono y Ruido."
+description: "Mi Última Reencarnación, El Tren, Sueño Perdido, Autóctono y Ruido."
 image: "../../images/Videos.jpg"
 order: 4
 categories: ["book de prensa"]
@@ -33,6 +33,7 @@ youtube_id <- function(x) {
 
 videos <- tibble::tribble(
   ~titulo,          ~url,
+  "Mi Última Reencarnación",        v$mi_ultima_reencarnacion_id,
   "El Tren",        v$el_tren_id,
   "Sueño Perdido",  v$sueno_perdido_id,
   "Autóctono",      v$autoctono_id,
@@ -78,5 +79,5 @@ cat('</div>\n')
 Sigue el canal de YouTube y el perfil de Instagram para más contenido
 audiovisual:
 
-- YouTube: {{< var redes.youtube_url >}}
+- YouTube: [@AutóctonosDeNingunaParte]({{< var redes.youtube_url >}})
 - Instagram: [{{< var redes.instagram_handle >}}]({{< var redes.instagram_url >}})

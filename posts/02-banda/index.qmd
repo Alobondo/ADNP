@@ -1,7 +1,7 @@
 ---
 title: "Banda"
 description: "Integrantes: Nico (voz y guitarra), Filo (bajo y coros) y Bondo (batería)."
-image: "../../images/banda-1.jpg"
+image: "../../images/En_gira.jpeg"
 order: 2
 categories: ["book de prensa"]
 ---

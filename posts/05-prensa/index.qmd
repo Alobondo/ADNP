@@ -1,6 +1,6 @@
 ---
 title: "Prensa"
-description: "Menciones en iRock, Cool Music, Rockaxis y Trunfo Rock."
+description: "Menciones en iRock, Cool Music, Rockaxis, Trunfo Rock, Freakopolis y Rara Frecuencia."
 image: "../../images/Prensa.png"
 order: 5
 categories: ["book de prensa"]
@@ -24,6 +24,8 @@ prensa <- tibble::tribble(
   "Rockaxis",     "2021", '"Alza la voz": Autóctonos de Ninguna Parte estrenan su disco debut', "https://www.rockaxis.com/chile/noticia/32333/-alza-la-voz-autoctonos-de-ninguna-parte-estrenan-su-disco-debut/",
   "Rockaxis",     "2024", "'Sueño Perdido' es el nuevo single de Autóctonos de Ninguna Parte", "https://www.rockaxis.com/chile/noticia/43948/-sueno-perdido-es-el-nuevo-single-de-autoctonos-de-ninguna-parte/",
   "Trunfo Rock",  "2025", 'Autóctonos De Ninguna Parte estrena nuevo single, "Ruido"', "https://triunforock.com.ar/autoctonos-de-ninguna-parte-estrena-nuevo-single-%c2%a8ruido%c2%a8/",
+    "Freakopolis", "2026", 'La última reencarnación antes de empezar de nuevo', "https://freakopolis.cl/la-ultima-reencarnacion-antes-de-empezar-de-nuevo/",
+  "Rara Frecuencia", "2026", 'Estuvimos en la pre-escucha del próximo disco de @autoctonos.musica', "https://www.instagram.com/reel/Dc6eYh_Rxmx/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==",
 )
 
 kable(prensa, col.names = c("Medio", "Año", "Titular", "URL"))

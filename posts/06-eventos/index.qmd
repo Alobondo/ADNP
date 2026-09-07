@@ -1,7 +1,7 @@
 ---
 title: "Eventos"
 description: "Destacados en vivo: Ummo, Bar Óxido, Teatro Mori, Mi Bar y Teatro Lihuén."
-image: "../../images/banda-4.jpg"
+image: "../../images/En_vivo.jpg"
 order: 6
 categories: ["book de prensa"]
 ---
