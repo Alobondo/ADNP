@@ -1,6 +1,6 @@
 ---
 title: "Prensa"
-description: "Menciones en iRock, Cool Music, Rockaxis, Trunfo Rock, Freakopolis, Rara Frecuencia y Radio Sónica."
+description: "Menciones en iRock, Cool Music, Rockaxis, Trunfo Rock, Freakopolis, Rara Frecuencia y Radio Sónica"
 image: "../../images/Prensa.png"
 order: 5
 categories: ["book de prensa"]
