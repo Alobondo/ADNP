@@ -1,6 +1,6 @@
 ---
 title: "Videos"
-description: "Mi Última Reencarnación, El Tren, Sueño Perdido, Autóctono y Ruido."
+description: "Calles de Santiago, Mi Última Reencarnación, El Tren, Sueño Perdido, Autóctono y Ruido."
 image: "../../images/Videos.jpg"
 order: 4
 categories: ["book de prensa"]
@@ -33,6 +33,7 @@ youtube_id <- function(x) {
 
 videos <- tibble::tribble(
   ~titulo,          ~url,
+  "Calles de Santiago",        v$calles_de_santiago_id,
   "Mi Última Reencarnación",        v$mi_ultima_reencarnacion_id,
   "El Tren",        v$el_tren_id,
   "Sueño Perdido",  v$sueno_perdido_id,
