@@ -35,5 +35,6 @@ kable(discografia, col.names = c("Lanzamiento", "Año", "Detalle"))
 
 Primer sencillo PostDigital: [**"Mi Última Reencarnación"**](https://www.youtube.com/watch?v=lTOsLTuZwbw&list=RDlTOsLTuZwbw&start_radio=1)
 Segundo sencillo PostDigital: [**"Calles de Santiago"**](https://www.youtube.com/watch?v=x-AghxZg5Qs&list=RDx-AghxZg5Qs&start_radio=1)
+Tercer sencillo PostDigital: [**"Huracán"**](https://www.youtube.com/watch?v=lVDh_WYnE-4&list=OLAK5uy_lmkRh_9YLPjFu8k1z-8cCN2v3pXa3mcLY)
 :::
 :::
