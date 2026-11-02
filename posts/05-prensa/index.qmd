@@ -1,6 +1,6 @@
 ---
 title: "Prensa"
-description: "Menciones en iRock, Cool Music, Rockaxis, Trunfo Rock, Freakopolis, Rara Frecuencia, Radio Sónica y Chile On The Rock."
+description: "Menciones en Medios de Prensa"
 image: "../../images/Prensa.png"
 order: 5
 categories: ["book de prensa"]
@@ -28,7 +28,9 @@ prensa <- tibble::tribble(
   "Rara Frecuencia", "2026", 'Estuvimos en la pre-escucha del próximo disco de @autoctonos.musica', "https://www.instagram.com/reel/Dc6eYh_Rxmx/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==",
   "iRock", "2026", "Autoctonos de Ninguna Parte comparten su single Calles de Santiago", "https://www.irock.cl/autoctonos-de-ninguna-parte-comparten-su-single-calles-de-santiago/",
   "Radio Sónica", "2026", "Autóctonos de Ninguna Parte comparten su single “Calles de Santiago”", "https://www.sonica.pro/autoctonos-de-ninguna-parte-comparten-su-single-calles-de-santiago/",
-  "Chile On The Rock", "2026", "Chile on the Rock || Episodio 28 de septiembre 2026 || Banda invitada: Autóctonos de Ninguna Parte", "https://www.youtube.com/watch?v=TPXDRj6rwVI"
+  "Chile On The Rock", "2026", "Chile on the Rock || Episodio 28 de septiembre 2026 || Banda invitada: Autóctonos de Ninguna Parte", "https://www.youtube.com/watch?v=TPXDRj6rwVI",
+  "Fe3dback", "2026", "Fe3dback || GOODSTOCK Radio || Banda invitada: Autóctonos de Ninguna Parte", "https://www.youtube.com/watch?si=C_IRtj5wogwpbEO4&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAadXD3HrLiM3_jg_Kwh9-jouJsD6HqBtLFuTtwY-dBmRWfc8-Bo3jrGK8iEePg_aem_itsHOijnSVdl1QnCobY65Q&v=0p2KjA7me6s&feature=youtu.be",
+  "Fxmedios", "2026", "Autóctonos de Ninguna Parte Estrena Canción", "https://www.instagram.com/p/DfBcvDgjrEu/?img_index=1"
 )
 
 kable(prensa, col.names = c("Medio", "Año", "Titular", "URL"))

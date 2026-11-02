@@ -1,6 +1,6 @@
 ---
 title: "Eventos"
-description: "Destacados en vivo: Ummo, Bar Óxido, Teatro Mori, Mi Bar y Teatro Lihuén."
+description: "Destacados en vivo: Ummo, Bar Óxido, Teatro Mori, Mi Bar, Teatro Lihuén y Bar de René."
 image: "../../images/En_vivo.JPG"
 order: 6
 categories: ["book de prensa"]
@@ -25,7 +25,8 @@ eventos <- tibble::tribble(
   "Bar Óxido",        2024,
   "Teatro Mori",      2024,
   "Mi Bar",           2025,
-  "Teatro Lihuén",    2025
+  "Teatro Lihuén",    2025,
+  "Bar de René",      2026
 ) |>
   arrange(anio) |>
   mutate(
@@ -38,7 +39,7 @@ kable(eventos |> select(lugar, anio), col.names = c("Lugar", "Año"))
 
 ```{r}
 #| label: fig-eventos
-#| fig-cap: "Presentaciones destacadas en vivo (2023-2025)"
+#| fig-cap: "Presentaciones destacadas en vivo (2023-2026)"
 #| fig-width: 9
 #| fig-height: 4
 ggplot(eventos, aes(x = orden, y = 0)) +
