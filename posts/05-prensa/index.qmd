@@ -30,7 +30,8 @@ prensa <- tibble::tribble(
   "Radio Sónica", "2026", "Autóctonos de Ninguna Parte comparten su single “Calles de Santiago”", "https://www.sonica.pro/autoctonos-de-ninguna-parte-comparten-su-single-calles-de-santiago/",
   "Chile On The Rock", "2026", "Chile on the Rock || Episodio 28 de septiembre 2026 || Banda invitada: Autóctonos de Ninguna Parte", "https://www.youtube.com/watch?v=TPXDRj6rwVI",
   "Fe3dback", "2026", "Fe3dback || GOODSTOCK Radio || Banda invitada: Autóctonos de Ninguna Parte", "https://www.youtube.com/watch?si=C_IRtj5wogwpbEO4&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAadXD3HrLiM3_jg_Kwh9-jouJsD6HqBtLFuTtwY-dBmRWfc8-Bo3jrGK8iEePg_aem_itsHOijnSVdl1QnCobY65Q&v=0p2KjA7me6s&feature=youtu.be",
-  "Fxmedios", "2026", "Autóctonos de Ninguna Parte Estrena Canción", "https://www.instagram.com/p/DfBcvDgjrEu/?img_index=1"
+  "Fxmedios", "2026", "Autóctonos de Ninguna Parte Estrena Canción", "https://www.instagram.com/p/DfBcvDgjrEu/?img_index=1",
+  "La Hora del Terrock", "2026", "Autóctonos de Ninguna Parte presenta su álbum “Post Digital”", "https://www.instagram.com/p/DgLoSTqksCG/?utm_source=ig_web_copy_link&bqrl=NTc4MTIwNjQ2YQ=="
 )
 
 kable(prensa, col.names = c("Medio", "Año", "Titular", "URL"))

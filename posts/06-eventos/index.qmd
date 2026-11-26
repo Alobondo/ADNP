@@ -1,6 +1,6 @@
 ---
 title: "Eventos"
-description: "Destacados en vivo: Ummo, Bar Óxido, Teatro Mori, Mi Bar, Teatro Lihuén y Bar de René."
+description: "Destacados en vivo: Ummo, Bar Óxido, Teatro Mori, Mi Bar, Teatro Lihuén, Bar de René y sala SCD Plaza Egaña."
 image: "../../images/En_vivo.JPG"
 order: 6
 categories: ["book de prensa"]
@@ -26,7 +26,8 @@ eventos <- tibble::tribble(
   "Teatro Mori",      2024,
   "Mi Bar",           2025,
   "Teatro Lihuén",    2025,
-  "Bar de René",      2026
+  "Bar de René",      2026,
+  "SCD Plaza Egaña",  2026
 ) |>
   arrange(anio) |>
   mutate(
